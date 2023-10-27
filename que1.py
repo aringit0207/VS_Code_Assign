@@ -13,15 +13,15 @@ def superPrimes(n):
     prit(n, isPrime)
 
     primes = [0 for i in range(2,n+1)]
-j = 0
-for p in range(2,n+1):
-    if(isPrime[p]):
-        primes[j] = p
-        j += 1
+    j = 0
+    for p in range(2,n+1): 
+        if(isPrime[p]):
+            primes[j] = p
+            j += 1
 
-for k in range(j):
-    if(isPrime[k+1]):
-        print (primes[k],end=" ")
+    for k in range(j):
+        if(isPrime[k+1]):
+            print (primes[k],end=" ")
 n =241
 print ("\nSuper-Primes less than or equal to ", n, " are :",)
 superPrimes(n)
